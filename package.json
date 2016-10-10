@@ -4,7 +4,13 @@
   "description": "Technical task for position on Compucorp",
   "scripts": {
     "test": "test",
-    "deploy": "gulp deploy"
+
+    "postinstall": "bower install",
+    "predeploy": "npm install",
+    "deploy": "gulp deploy",
+
+    "prestart": "npm run deploy",
+    "start": "http-server ./dist"
   },
   "repository": {
     "type": "git",
@@ -28,6 +34,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "http-server": "^0.9.0"
   }
 }
