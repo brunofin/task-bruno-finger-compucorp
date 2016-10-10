@@ -1,0 +1,29 @@
+{
+  "name": "task-bruno-finger-compucorp",
+  "version": "1.0.0",
+  "description": "Technical task for position on Compucorp",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/brunofin/task-bruno-finger-compucorp.git"
+  },
+  "author": "Bruno Finger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/brunofin/task-bruno-finger-compucorp/issues"
+  },
+  "homepage": "https://gitlab.com/brunofin/task-bruno-finger-compucorp#README",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "gulp": "^3.9.1",
+    "gulp-sass": "2.1.1",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-inject": "3.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-concat": "2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-jsvalidate": "2.1.0"
+  }
+}

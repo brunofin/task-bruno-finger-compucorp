@@ -1,0 +1,23 @@
+{
+  "name": "task-bruno-finger-compucorp",
+  "version": "1.0.0",
+  "description": "Technical task for position on Compucorp",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/brunofin/task-bruno-finger-compucorp.git"
+  },
+  "author": "Bruno Finger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/brunofin/task-bruno-finger-compucorp/issues"
+  },
+  "homepage": "https://gitlab.com/brunofin/task-bruno-finger-compucorp#README",
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "angular-material": "1.1.1",
+    "angular-translate": "2.11.1",
+    "angular-translate-loader-partial": "2.11.1"
+  }
+}
