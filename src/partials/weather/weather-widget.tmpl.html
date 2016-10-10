@@ -42,3 +42,17 @@
         {{ ::status.description }}
   </div>
 </div>
+<div ng-if="!weather"
+    layout="column"
+    layout-align="start stretch"
+    layout-padding
+    layout-margin>
+    <md-input-container>
+      <label>City name or Post code</label>
+      <input type="text"
+        ng-model="manualInfo">
+    </md-input-container>
+    <md-button class="md-raised md-primary"
+        ng-disabled="!manualInfo.length"
+        ng-click="getWeatherforEntry(manualInfo)">Submit</md-button>
+</div>
