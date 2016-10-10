@@ -1,0 +1,44 @@
+<div ng-if="weather"
+    layout="column"
+    layout-align="start stretch"
+    layout-padding
+    layout-margin>
+  <div class="md-display-1"
+      layout="row"
+      layout-align="space-around center">
+        {{ ::weather.name }}
+  </div>
+  <div layout="row"
+      layout-align="space-around center">
+    <div class="md-subhead">Temperature: {{ ::weather.main.temp }} °C</div>
+    <div class="md-subhead">Pressure: {{ ::weather.main.pressure }} hPa</div>
+    <div class="md-subhead">Humidity: {{ ::weather.main.humidity }}%</div>
+  </div>
+  <div layout="row"
+      layout-align="space-around center">
+    <div class="md-subhead">Wind speed: {{ ::weather.wind.speed }} m/s</div>
+    <div class="md-subhead">Wind direction: <div style="transform: rotate({{ ::weather.wind.deg }}deg); display: inline-block;">⟶</div></div>
+  </div>
+  <div layout="row"
+      layout-align="space-around center">
+    <div ng-if="weather.rain['3h']"
+        class="md-subhead">
+          Rain volume for the last 3 hours: {{ ::weather.rain['3h'] }} cm³
+    </div>
+    <div ng-if="weather.snow['3h']"
+        class="md-subhead">
+          Snow volume for the last 3 hours: {{ ::weather.snow['3h'] }} cm³
+    </div>
+  </div>
+  <div class="md-subhead"
+      layout="row"
+      layout-align="space-around center">
+        Clouds: {{ ::weather.clouds.all }}%
+  </div>
+  <div ng-repeat="status in weather.weather"
+      class="md-subhead"
+      layout="row"
+      layout-align="space-around center">
+        {{ ::status.description }}
+  </div>
+</div>
