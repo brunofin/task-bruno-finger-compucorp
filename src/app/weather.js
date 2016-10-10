@@ -11,7 +11,7 @@
       $translateProvider.preferredLanguage('en');
       $translateProvider.useSanitizeValueStrategy('escape');
       $translateProvider.useLoader('$translatePartialLoader', {
-        urlTemplate: '/partials/{part}/translation/{lang}/strings.json'
+        urlTemplate: '/translation/{part}/{lang}/strings.json'
       });
     }]);
 
